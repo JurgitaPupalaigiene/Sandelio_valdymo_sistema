@@ -5,8 +5,8 @@ import { BrowserRouter, Link } from 'react-router-dom';
 import Clients from './components/Clients/Clients';
 import SingleClientComponent from './components/Clients/SingleClientComponent';
 import ClientAdministrationContainer from './components/ClientAdministration/ClientAdministrationContainer';
-import noMatch from './components/NAVIGACIJA/noMatch';
-import HomePage from './components/NAVIGACIJA/HomePage';
+import noMatch from './components/Navigation/noMatch';
+import HomePage from './components/Navigation/HomePage';
 import ClientCardContainer from './components/Clients/ClientCardContainer';
 import UpdatingClientContainer from './components/ClientAdministration/UpdatingClientContainer';
 import NewClientContainer from './components/ClientAdministration/NewClientContainer'
