@@ -2,16 +2,14 @@ import React, { Component } from 'react';
 import './App.css';
 import { Switch, Redirect, Route } from 'react-router';
 import { BrowserRouter, Link } from 'react-router-dom';
-import Festivals from './components/Festivals/Festivals';
-import SingleFestivalComponent from './components/Festivals/SingleFestivalComponent';
-import FestivalAdministrationContainer from './components/FestivalAdministration/FestivalAdministrationContainer';
-import NewFestivalContainer from './components/FestivalAdministration/NewFestivalContainer';
-import UpdatingFestivalContainer from './components/FestivalAdministration/UpdatingFestivalContainer';
+import Clients from './components/Clients/Clients';
+import SingleClientComponent from './components/Clients/SingleClientComponent';
+import ClientAdministrationContainer from './components/ClientAdministration/ClientAdministrationContainer';
 import noMatch from './components/NAVIGACIJA/noMatch';
 import HomePage from './components/NAVIGACIJA/HomePage';
-import FestivalCardComponent from './components/Festivals/FestivalCardComponent';
-import FestivalCardContainer from './components/Festivals/FestivalCardContainer';
-
+import ClientCardContainer from './components/Clients/ClientCardContainer';
+import UpdatingClientContainer from './components/ClientAdministration/UpdatingClientContainer';
+import NewClientContainer from './components/ClientAdministration/NewClientContainer'
 
 class App extends Component {
   
@@ -22,12 +20,12 @@ class App extends Component {
       <BrowserRouter>
           <HomePage>
               <Switch>
-                  <Route exact path='/' component={Festivals} />
-                  <Route exact path='/festival/:title' component={FestivalCardContainer}/>
-                  <Route exact path="/festivals/:title" component={SingleFestivalComponent} />
-                  <Route exact path='/admin' component={FestivalAdministrationContainer} />
-                  <Route exact path="/admin/festivals/new" component={NewFestivalContainer} />       
-                  <Route exact path="/admin/festivals/:title" component={UpdatingFestivalContainer} />   
+                  <Route exact path='/' component={Clients} />
+                  <Route exact path='/clients/:name' component={ClientCardContainer}/>
+                  <Route exact path="/clients/:name" component={SingleClientComponent} />
+                  <Route exact path='/admin' component={ClientAdministrationContainer} />
+                  <Route exact path="/admin/clients/new" component={NewClientContainer} />       
+                  <Route exact path="/admin/clients/:name" component={UpdatingClientContainer} />   
                   <Route path="*" component={noMatch} />
                   <Route component={HomePage} />
               </Switch>

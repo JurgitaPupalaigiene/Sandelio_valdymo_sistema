@@ -1,11 +1,11 @@
 import React from 'react';
-import picture from '../Festivals/img/poilsis.jpg';
+import picture from '../Clients/img/poilsis.jpg';
 import { withRouter } from 'react-router';
 import { Link } from 'react-router-dom';
 
-const FestivalAdministrationComponent = (props) => {
+const ClientAdministrationComponent = (props) => {
     
-    var linkas = "/admin/festivals/" + props.title;
+    var linkas = "/admin/clients/" + props.title;
     return (
         <div className="container">
             <div className="row">
@@ -24,4 +24,4 @@ const FestivalAdministrationComponent = (props) => {
     }
 
 
-export default withRouter(FestivalAdministrationComponent);
+export default withRouter(ClientAdministrationComponent);

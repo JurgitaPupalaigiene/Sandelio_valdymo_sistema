@@ -1,24 +1,25 @@
 import React from 'react';
 import picture from './img/poilsis.jpg';
 import './styles.css';
-import FestivalCardComponent from "./FestivalCardComponent"
+import ClientCardComponent from "./ClientCardComponent"
 
-const SingleFestivalComponent = (props) => {
+const SingleClientComponent = (props) => {
     return (
         <div className="container">
-            <FestivalCardComponent className="row">
+            <ClientCardComponent className="row">
                 <div className="col-2">
                     <img src={picture} alt="poilsis" width="150px"></img>
                 </div>
                 <div className="col-3">
-                    <h5>{props.title}</h5>
-                    <p>{props.description}</p>
+                    <h5>{props.name}</h5>
+                    <p>{props.surname}</p>
+                    <p>{props.dateOfBirth}</p>
+                    <p>{props.phoneNumber}</p>
                     <p>{props.type}</p>
-                    <p>Veliava: {props.flag}</p>
                 </div>
-            </FestivalCardComponent>
+            </ClientCardComponent>
         </div>
     );
 }
 
-export default SingleFestivalComponent;
+export default SingleClientComponent;

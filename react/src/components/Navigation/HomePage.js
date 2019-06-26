@@ -11,16 +11,16 @@ var HomePage = (props) => {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav mr-auto">
                             <li className="nav-item active">
-                                <Link to='/'>Pradzia</Link> |&nbsp;
+                                <Link to='/'>HomePage</Link> |&nbsp;
                             </li>
                             <li className="nav-item active">
-                                <Link to='/admin'>Svenciu registras</Link> |&nbsp;
+                                <Link to='/admin'>Clients</Link> |&nbsp;
                             </li>
                             <li className="nav-item active">
-                                <Link to='/pagalba'>Pagalba</Link> |&nbsp;
+                                <Link to='/pagalba'>Help</Link> |&nbsp;
                             </li>
                             <li className="nav-item active">
-                                <Link to='/kontaktai'>Kontaktai</Link> |&nbsp;
+                                <Link to='/kontaktai'>Contacts</Link> |&nbsp;
                             </li>
                         </ul>
                     </div>
